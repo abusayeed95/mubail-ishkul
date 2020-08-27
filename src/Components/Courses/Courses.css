@@ -1,0 +1,22 @@
+.course-container {
+    border: none;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin: 20px 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.39);
+}
+
+.course-container:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.img-container {
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.course-name {
+    height: 76px;
+}

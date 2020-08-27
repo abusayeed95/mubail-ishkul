@@ -1,0 +1,13 @@
+.down {
+    font-size: 65px;
+    position: absolute;
+    z-index: -1;
+}
+
+.up {
+    font-size: 35px;
+    color: rgb(22, 20, 20);
+    position: absolute;
+    left: 272px;
+    top: 13px;
+}
