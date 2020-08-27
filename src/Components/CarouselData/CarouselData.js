@@ -10,7 +10,7 @@ const CarouselData = (props) => {
     const prevIcon = <FontAwesomeIcon icon={faArrowAltCircleLeft} />
     const faCircle = <FontAwesomeIcon icon={faAtom} />
     return (
-        <div className="container text-light">
+        <div className=" mx-5 text-light">
             <Carousel nextIcon={nextIcon} prevIcon={prevIcon} direction={faCircle} interval={3000} indicators={false} index={0}>
                 <Carousel.Item>
                     <div className="offer text-center text-primary">

@@ -23,15 +23,17 @@ function App() {
       <div className="carousel-data">
         <CarouselData carouselData={carouselData}></CarouselData>
       </div>
-      <h1 className="courses-heading text-light">All courses ({courses.length})</h1>
-      <div className="row m-0 bg-secondary py-2">
-        <div className="row col-lg-9 col-md-8  col-7 text-light" id="courses">
-          {
-            courses.map(course => <Courses courseDetails={course} enrollButton={enrollButton} key={course.id}></Courses>)
-          }
-        </div>
-        <div className=" col-lg-3 col-md-4 col-5">
-          <CourseCart cart={cart}></CourseCart>
+      <div id="courses">
+        <h1 className="courses-heading text-light">All courses ({courses.length})</h1>
+        <div className="row m-0 bg-secondary py-2">
+          <div className="row col-lg-9 col-md-8  col-7 text-light">
+            {
+              courses.map(course => <Courses courseDetails={course} enrollButton={enrollButton} key={course.id}></Courses>)
+            }
+          </div>
+          <div className=" col-lg-3 col-md-4 col-5">
+            <CourseCart cart={cart}></CourseCart>
+          </div>
         </div>
       </div>
     </div >

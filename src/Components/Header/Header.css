@@ -1,0 +1,12 @@
+.nav-link {
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: .2s ease;
+    padding: 0;
+    margin: .5rem;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+}
