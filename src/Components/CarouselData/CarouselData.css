@@ -11,7 +11,7 @@
 }
 
 .offer, .carousel-area {
-    background-image: linear-gradient(to bottom, white, gray, white);
+    background-image: linear-gradient(to right, white, gray);
     height: 80vh;
     padding: 2rem;
     border-radius: 20px;
