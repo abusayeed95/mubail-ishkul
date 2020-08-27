@@ -5,6 +5,7 @@ import Courses from './Components/Courses/Courses';
 import CourseCart from './Components/Course-cart/CourseCart'
 import courses from './Components/FakeData/FakeData'
 import { useState } from 'react';
+import CarouselData from './Components/CarouselData/CarouselData'
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -13,9 +14,15 @@ function App() {
     const addedCourse = [...cart, course];
     setCart(addedCourse)
   }
+  const carouselData = courses.slice(0, 4)
   return (
     <div className=" bg-secondary">
-      <div className="header mb-5" id="home"><Header></Header></div>
+      <div className="header mb-5" id="home">
+        <Header></Header>
+      </div>
+      <div className="carousel-data">
+        <CarouselData carouselData={carouselData}></CarouselData>
+      </div>
       <h1 className="courses-heading text-light">All courses ({courses.length})</h1>
       <div className="row m-0 bg-secondary py-2">
         <div className="row col-lg-9 col-md-8  col-7 text-light" id="courses">
